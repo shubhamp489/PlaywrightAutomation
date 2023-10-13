@@ -5,7 +5,7 @@ test('Home Page',async({page})=>{
 
     await page.goto('https://demoblaze.com/index.html');
    
-    const pageTitle = page.title();   //to capture title of the webpage
+    const pageTitle = await page.title();   //to capture title of the webpage
     console.log('Page title is :' , pageTitle);    //to print title
    
     await expect(page).toHaveTitle('STORE');   //to validate page title
@@ -15,7 +15,7 @@ test('Home Page',async({page})=>{
     console.log('Page url is : ',pageUrl);
     
 
-//testing
+
     //to close page
     await page.close();
 
