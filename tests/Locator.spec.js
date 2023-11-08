@@ -1,4 +1,4 @@
-const {test, expect } = require("@playwright/test")
+const {test, expect, selectors } = require("@playwright/test")
 
 //import (test,export) from '@playwright/test'
 
@@ -20,6 +20,8 @@ await page.locator('#loginusername').fill('shubhamp')
 
 //provide password -css
 await page.locator('#loginpassword').fill('Lovgh5655@1234')
+
+
 
 
 //clcik om login buttton - xpath
