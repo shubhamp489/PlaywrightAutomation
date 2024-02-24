@@ -1,6 +1,6 @@
 const {test, expect, selectors } = require("@playwright/test")
 
-//import (test,export) from '@playwright/test'
+//import {test,export} from '@playwright/test'
 
 test('Locator',async({page})=>{
 

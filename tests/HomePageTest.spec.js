@@ -17,6 +17,6 @@ test('Home Page',async({page})=>{
 
 
     //to close page
-    await page.close();
+    //await page.close();
 
 })
